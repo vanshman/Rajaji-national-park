@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajaji National Park</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <style>
+        body{
+            
+            background: linear-gradient(45deg, rgb(216, 140, 140, .5), rgb(218, 193, 93, .5), rgb(118, 235, 118, .5)), url("https://images.unsplash.com/photo-1609769682973-990c3b6695dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXR0YXJha2hhbmR8ZW58MHx8MHx8&w=1000&q=80");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .head{
+            text-align: center;
+        }
+        img{
+            width: 640px;
+            height: 540px;
+            margin: 20px;
+        }
+        @media only screen and (max-width: 768px) {
+            img{
+                width: 70%;
+                height: 65%;
+                margin: 20px;
+            }
+        }
+        img{
+            transition: .2s;
+        }
+        img:hover{
+            transform: scale(1.1);
+        }
+        .links{
+            border: white 1px solid;
+            border-radius: 5px;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar-inverse my_nav_bar" id="main">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="borderWhite" href="#" >Rajaji National Park</a>
+        </div>
+    <div class="collapse navbar-collapse" id="MyNavbar">
+        <ul class="nav navbar-nav">
+            <li id="l" class="links"><a href="#head">Home</a></li>
+            <li id="l2" class="links"><a href="mailto:vanshsneakatksqd@gmail.com">Contact Developer</a></li>
+            <li id="l3" class="links"><a href="https://vanshman.github.io">Other websites</a></li>
+            <li id="l4" class="links"><a href="https://vanshcode.itch.io">Games by developer</a></li>
+            <li id="l6" class="links"><a onclick="error()">Sign In</a></li>
+            <li id="l7" class="links"><a onclick="error()">Sign Up</a></li>
+        </ul>
+    </div>
+    </nav>
+    <div class="top">
+        <h1 class="head">Rajaji National Park</h1>
+        <p class="">Rajaji National Park is an Indian national park and tiger reserve that encompasses the Shivaliks, near the foothills of the Himalayas. It is spread over 820 km²., and three districts of Uttarakhand: Haridwar, Dehradun and Pauri Garhwal. In 1983, three wildlife sanctuaries in the area namely, Chilla, Motichur and Rajaji sanctuaries were merged into one. Rajaji National Park has been named after C. Rajagopalachari, a prominent leader of the Freedom Struggle, the second and last Governor-General of independent India and one of the first recipients of India's highest civilian award Bharat Ratna.</p>
+        <a target="_blank" href="https://en.wikipedia.org/wiki/Rajaji_National_Park"><button class="btn btn-success">Know more</button></a>
+        <center>
+            <img class="img" src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTJ1SvwM_uR-OAakYt0En870IhVzvpJE-S-Ut0fSKOxn1sXse4OEW-T9uclFCrXOEW9sBpqniwwabEEO7FOnnbJMw">
+            <img class="img" src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRucUSvAHhv1SfzOXQ6tGK5558CkXp--Jw0XU9NvOCqQRxJgbRgZtoIAUEIqUln-HOfEoStGxr2HtUmF7LcsfnB9g">
+            <img class="img" src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQsBEwzWlSt1D5ARi2dwRMsuPKiXGFh96N3hdnMaFlEtIaY8f8iUuIDoQXF1yfp5Maunfq-iVAWkXuhttJ4vkVbbQ">
+            <img class="img" src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSdm8Rf39cJ1Q5bWk-SpVKY7ekk26XkAdMImyd2sfyDB8PJQ-HM7MOho-9pwkGQj8z6rcn3DdwlSL6-Kb9V5cM99g">
+        </center>
+        <script>
+            function error(){
+                swal("Error!", "This button is fake and doesn't work!", "warning");
+            }
+        </script>
+    </div>
+    </body>
+</html>
